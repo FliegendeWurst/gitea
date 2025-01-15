@@ -91,7 +91,7 @@ var (
 		verbLfsAuthenticate,
 		verbLfsTransfer,
 	)
-	alphaDashDotPattern = regexp.MustCompile(`[^\w-\.]`)
+	alphaDashDotPattern = regexp.MustCompile(`[^\w-\.äöüÄÖÜ]`)
 )
 
 // fail prints message to stdout, it's mainly used for git serv and git hook commands.
